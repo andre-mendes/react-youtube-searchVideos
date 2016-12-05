@@ -13,7 +13,7 @@ import                           './css/YoutubeSearchBar.css'
 injectTapEventPlugin();
 
 
-// Google's autocomplete API <3
+// Google's autocomplete search API <3
 const googleAutoSuggestURL = `
   //suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=`;
 
@@ -31,6 +31,7 @@ class YoutubeSearchBar extends Component {
     }
   }
 
+
   // When update Input
   onUpdateInput(inputValue) {
     const self = this;
@@ -40,6 +41,7 @@ class YoutubeSearchBar extends Component {
       self.performSearch();
     });
   }
+
 
   // Bringing autocomplete google list
   performSearch() {
@@ -66,6 +68,7 @@ class YoutubeSearchBar extends Component {
     }
   }
 
+
   // When select item
   onNewRequest(searchTerm) {
     const
@@ -89,17 +92,18 @@ class YoutubeSearchBar extends Component {
     });
   }
 
+
   render() {
     return(
       <section className="top__container">
         <div className="title__container">
           <h1 className="title__primary">
-            Buscar vídeos no YouTube - Reamp Test
+            Youtube search videos - ReactJS
           </h1>
         </div>
         <MuiThemeProvider muiTheme={getMuiTheme()}>
           <AutoComplete
-            hintText="Digite o que procura"
+            hintText="Type what you want to watch"
             dataSource={this.state.dataSource}
             onUpdateInput={this.onUpdateInput}
             onNewRequest={this.onNewRequest} />

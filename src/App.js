@@ -22,23 +22,11 @@ let App = React.createClass({
     });
   },
 
+
   showResults(searchResults) {
     this.setState({
-      open          : true,
       searchResults : searchResults
     })
-  },
-
-  handleClose() {
-    this.setState({open: false});
-  },
-
-  onRequestClose() {
-    this.setState({open: false});
-  },
-
-  yourCallback(searchResults) {
-    console.log('searchResults are: ', searchResults);
   },
 
   render() {
