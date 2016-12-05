@@ -1,16 +1,13 @@
-# Youtube search videos - ReactJS
+# Youtube Search Videos 
+- Built in ReactJS.
 
-Example app that using ReactJS with Youtube API to search videos.
+## Requirements
+- (NodeJS)[https://nodejs.org/en/]
+- (NPM)[https://www.npmjs.com/]
 
-### Requirements
+## Installation
+Run `npm install`.
 
-* NodeJS
-* Npm
-
-### Installation
-
-``` npm install ```
-
-### Run
-
-``` npm start ```
+## Usage
+Run `npm start`.
+Hack it! ;-)
