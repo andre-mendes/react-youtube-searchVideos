@@ -1,0 +1,35 @@
+.search-result-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search__result {
+  width: 50%;
+  list-style: none;
+  margin-top: 30px;
+  padding-right: 15px;
+  transition: opacity .2s;
+  will-change: opacity;
+}
+.search__result:hover {
+  opacity: .8;
+}
+
+.search__link {
+  text-decoration: none;
+  color: #3c3b3b;
+  display: flex;
+  align-items: center;
+}
+
+.search__photo {
+  margin-right: 10px;
+}
+
+.search__title {
+  font-size: 18px;
+  font-family: Arial;
+}
