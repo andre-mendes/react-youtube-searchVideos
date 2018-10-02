@@ -53,7 +53,9 @@ class YoutubeSearchBar extends Component {
       JSONP(url, function(error, data) {
         let searchResults, retrievedSearchTerms;
 
-        if(error) return error;
+        if (error) {
+          return error;
+        }
 
         searchResults = data[1];
 
